@@ -5,6 +5,8 @@
 *.iml
 target
 
+cmake-build-debug
+
 # Log file
 *.log
 

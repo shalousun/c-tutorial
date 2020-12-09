@@ -1,4 +1,4 @@
-linux select模型
+linux多路io
 
 # Select
 Select command allows to monitor multiple file descriptors,
@@ -33,4 +33,5 @@ FD_ISSET(master_sock, &readfds);
 select函数
 ```
 activity = select( max_fd + 1 , &readfds , NULL , NULL , NULL);
+int select(int nfds, fd_set *readfds, fd_set *writefds, fd_set *exceptfds, struct timeval *timeout);
 ```
